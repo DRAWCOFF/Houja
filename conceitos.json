@@ -1,8 +1,84 @@
 {
-    "Stage 1":[
-        {
-            
+    "Stage 1":
+    [
+        {"HI_KA":
+        [
+            {
+                "HKlv1":
+                [
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+
+                            ]
+                            },
+                            {"from_where":
+                            [
+
+                            ]
+                            }
+                        ]
+                        },
+                        {"mult_ans":
+                        [
+                            {"pronunce":
+                            [   
+
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+
+                            ]
+                            },
+                            {"from_where":
+                            [
+
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"from_group":
+                            []
+                        },
+                        {"rigt_afirm":
+                            []
+                        }
+                    ]
+                    }
+                ],
+                "HKlv2":
+                [
+
+                ],
+                "HKlv3":
+                [
+
+                ],
+                "HKlv4":
+                [
+
+                ],
+                "HKlv5":
+                [
+
+                ]
+            }
+        ]
         }
+
     ]
     
 }
