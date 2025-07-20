@@ -734,12 +734,10 @@
                             [
                             {
                                 "pergunta": "",
-                                "opções": ["", ""],
                                 "resposta": ""
                             },
                             {
                                 "pergunta": "",
-                                "opções": ["",""],
                                 "resposta": ""
                             }
                             ]
@@ -758,6 +756,107 @@
                     }
                     ]
                     }
+                ]
+            },
+            {
+                "Words":
+                [
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"rigt_afirm":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"significado":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"word_sig":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
+                    ]
+                    }                    
                 ]
             }
         ]
