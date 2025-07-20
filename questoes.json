@@ -869,11 +869,17 @@
                     {
                         "pergunta":"",
                         "opções":"",
-                        "resp_1":""
+                        "resp_1":"",
+                        "resp_2":""
                     }
                 ]},
                 {"knj_sign":[
-
+                    {
+                        "pergunta":"",
+                        "opções":"",
+                        "resp_1":"",
+                        "resp_2":""
+                    }
                 ]}
             ]
         }
