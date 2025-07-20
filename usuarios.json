@@ -1,8 +1,8 @@
 {
     "usuarios": [
         {
-            "User": "Mineirinho",
-            "senha": "6e1b1cacb6fc00cc20c658c9b1da65c329159e969076ffbfcace7ed87942cd9f",
+            "User": "oto",
+            "senha": "5b9267b43b40b8ba3e5498ec55239fd16cb297d8ab0e5b129066e91eaa95296d",
             "HK_lv": 1,
             "Kj_level": 1,
             "ListOfLearned_HK": [],
@@ -13,8 +13,8 @@
             "STAGE": 1
         },
         {
-            "User": "oto",
-            "senha": "5b9267b43b40b8ba3e5498ec55239fd16cb297d8ab0e5b129066e91eaa95296d",
+            "User": "Roger",
+            "senha": "62dd68d3bf85fdb3e12fc2d7d5bbe9f5984ad7dd377b75066198ca047a1f8ccf",
             "HK_lv": 1,
             "Kj_level": 1,
             "ListOfLearned_HK": [],

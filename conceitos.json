@@ -12,36 +12,80 @@
                         [
                             {"pronunce":
                             [   
-
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
                             ]
                             },
                             {"qual_simb":
                             [
-
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
                             ]
                             },
                             {"from_where":
                             [
-
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
                             ]
                             }
                         ]
                         },
                         {"mult_ans":
                         [
-                            {"pronunce":
-                            [   
-
-                            ]
-                            },
                             {"qual_simb":
                             [
-
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
                             ]
                             },
                             {"from_where":
                             [
-
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
                             ]
                             }
                         ]
@@ -51,29 +95,669 @@
                     {"Boleano":
                     [
                         {"from_group":
-                            []
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
                         },
                         {"rigt_afirm":
-                            []
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
                         }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"deonde":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"esc_pron":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
                     ]
                     }
                 ],
                 "HKlv2":
                 [
-
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            }
+                        ]
+                        },
+                        {"mult_ans":
+                        [
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"from_group":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        },
+                        {"rigt_afirm":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"deonde":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"esc_pron":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
+                    ]
+                    }
                 ],
                 "HKlv3":
                 [
-
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            }
+                        ]
+                        },
+                        {"mult_ans":
+                        [
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"from_group":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        },
+                        {"rigt_afirm":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"deonde":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"esc_pron":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
+                    ]
+                    }
                 ],
                 "HKlv4":
                 [
-
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            }
+                        ]
+                        },
+                        {"mult_ans":
+                        [
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"from_group":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        },
+                        {"rigt_afirm":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"deonde":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"esc_pron":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
+                    ]
+                    }
                 ],
                 "HKlv5":
                 [
-
+                    {"mult_choice":
+                    [
+                        {"one_ans":
+                        [
+                            {"pronunce":
+                            [   
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resposta":""
+                                }
+                            ]
+                            }
+                        ]
+                        },
+                        {"mult_ans":
+                        [
+                            {"qual_simb":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            },
+                            {"from_where":
+                            [
+                                {
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                },
+                                {   
+                                  "pergunta": "",
+                                  "opções": [""],
+                                  "resp_1":"",
+                                  "resp_2":""
+                                }
+                            ]
+                            }
+                        ]
+                        }
+                    ]
+                    },
+                    {"Boleano":
+                    [
+                        {"from_group":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        },
+                        {"rigt_afirm":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta":""
+                            }
+                            ]
+                        }
+                    ]
+                    },
+                    {"Escrita":
+                    [
+                        {"deonde":
+                            [
+                            {
+                                "pergunta": "",
+                                "opções": ["", ""],
+                                "resposta": ""
+                            },
+                            {
+                                "pergunta": "",
+                                "opções": ["",""],
+                                "resposta": ""
+                            }
+                            ]
+                    },
+                        {"esc_pron":
+                            [
+                            {
+                                "pergunta": "",
+                                "resposta":""
+                            },
+                            {
+                                "pergunta": "",
+                                "resposta": ""
+                            }
+                            ]
+                    }
+                    ]
+                    }
                 ]
             }
         ]
