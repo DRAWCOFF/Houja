@@ -5,7 +5,7 @@ import os
 import hashlib
 
 CAMINHO_USUARIOS = "usuarios.json"
-CAMINHO_CONCEITOS = "conceitos.json"
+CAMINHO_CONTEUDO = "conteudo.json"
 CAMINHO_QUESTOES = "questoes.json"
 
 
@@ -13,6 +13,19 @@ Aluno = None #recebe na função login, os dados do usuário
 
 def gerar_hash(senha: str) -> str:
     return hashlib.sha256(senha.encode("utf-8")).hexdigest()
+
+def carregar_conteudo():
+    if os.path(CAMINHO_CONTEUDO):
+        with open(CAMINHO_CONTEUDO, "r", encoding="utf-8") as arquivo:
+            return json.load(arquivo)
+    else:
+        return {"Content": []}
+
+def salvar_content(data):
+    with open(CAMINHO_CONTEUDO, "w", encoding="utf-8") as arquivo:
+        json.dump(data, arquivo, indent=4, ensure_ascii=False)
+
+std_source = carregar_conteudo()
 
 # Carrega os usuários do arquivo JSON
 def carregar_usuarios():
@@ -30,6 +43,12 @@ def salvar_usuarios(data):
 # Dados carregados
 dados = carregar_usuarios()
 
+def tab_learn():
+    TbLearn = tk.Toplevel(janela)
+    TbLearn.title("Houja - Aprender")
+    TbLearn.geometry("800x600")
+    h1 = tk.Label(TbLearn, text=f"{std_source["Assunto"["Hiragana"]]}")
+
 def Prime_screen(quem):
     Prime = tk.Toplevel(janela)
     Prime.title("Houja - Resumo do Aprendizado")
@@ -39,9 +58,8 @@ def Prime_screen(quem):
     h2 = tk.Label(Prime, text=f"{quem}")
     h2.pack()
     
+    Bt_learn_stg1 = tk.Button(Prime, text=f"Vamos começar a aprender Japonês", command=tab_learn)
     
-    
-    hk_lv = tk.Label(Prime, text=f"")
 
 # Função de login
 def fazer_login():
