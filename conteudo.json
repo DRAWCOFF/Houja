@@ -6,20 +6,20 @@
                 {"HKlv1":
                     [
                         {   "Assunto": "Hiragana",
-                            "O que e":"O Hiragana (ひらがな) é um dos três sistemas de escrita usados na língua japonesa, junto com o Katakana e os Kanji. Na gramática japonesa, ele tem um papel essencial e multifuncional.",
+                            "what":"O Hiragana (ひらがな) é um dos três sistemas de escrita usados na língua japonesa, junto com o Katakana e os Kanji. Na gramática japonesa, ele tem um papel essencial e multifuncional.\n\n",
 
-                            "Explicacao":"O Hiragana é um silabário fonético, ou seja, cada caractere representa uma sí­laba (como ka, shi, mu, etc.). Ele é o sistema mais básico e fundamental da escrita japonesa, sendo o primeiro aprendido por crianças japonesas e estudantes de japonês",
+                            "Explicacao":"O Hiragana é um silabário fonético, ou seja, cada caractere representa uma sí­laba (como ka, shi, mu, etc.). Ele é o sistema mais básico e fundamental da escrita japonesa, sendo o primeiro aprendido por crianças japonesas e estudantes de japonês\n\n",
 
-                            "funcao":"Palavras Gramáticais - Hiragana é usado para escrever partículas gramaticais como: は (wa) marca o tópico da frase; が (ga) marca o sujeito; を (o) marca o objeto direto; に、で、へ (ni, de, e) marcam direções, localizações, etc.\n Okurigana (おくりがな) - São as terminações gramaticais dos verbos e adjetivos que acompanham os kanji, como: 食べる (taberu – comer) → o kanji 食 indica comer, e o べる (hiragana) mostra a conjugação. 大きい (ookii – grande) → 大 = grande, きい é a terminação gramatical.\n Palavras nativas japonesas sem kanji - Algumas palavras não têm kanji, ou os kanji são raros, então são escritas totalmente em Hiragana: ありがとう (arigatou – obrigado)いぬ (inu – cachorro)\n Conjugações e flexões verbais - O Hiragana é usado para modificar o tempo, forma polida, negativa etc. dos verbos: 行く (iku – ir) 行きます (ikimasu – forma polida)行った (itta – passado)",
+                            "funcao":"Palavras Gramáticais - Hiragana é usado para escrever partículas gramaticais como: は (wa) marca o tópico da frase; が (ga) marca o sujeito; を (o) marca o objeto direto; に、で、へ (ni, de, e) marcam direções, localizações, etc.\n Okurigana (おくりがな) - São as terminações gramaticais dos verbos e adjetivos que acompanham os kanji, como: 食べる (taberu – comer) → o kanji 食 indica comer, e o べる (hiragana) mostra a conjugação. 大きい (ookii – grande) → 大 = grande, きい é a terminação gramatical.\n Palavras nativas japonesas sem kanji - Algumas palavras não têm kanji, ou os kanji são raros, então são escritas totalmente em Hiragana: ありがとう (arigatou – obrigado)いぬ (inu – cachorro)\n Conjugações e flexões verbais - O Hiragana é usado para modificar o tempo, forma polida, negativa etc. dos verbos: 行く (iku – ir) 行きます (ikimasu – forma polida)行った (itta – passado)\n\n",
 
-                            "Exemplo1":"Partículas gramaticais: は、が、を、に、で",
-                            "Exemplo2":"Terminações verbais: ～ます、～た、～ない",
-                            "Exemplo3":"Palavras nativas simples: これ、それ、あの、いぬ",
-                            "Exemplo4":"Complemento de kanji: 飲みます、知っている"
+                            "Exemplo1":"Partículas gramaticais: は、が、を、に、で\n",
+                            "Exemplo2":"Terminações verbais: ～ます、～た、～ない\n",
+                            "Exemplo3":"Palavras nativas simples: これ、それ、あ\nの、いぬ",
+                            "Exemplo4":"Complemento de kanji: 飲みます、知っている\n"
                         },
                         {
                             "Assunto": "Katakana",
-                            "O que e":"O Katakana (カタカナ) é, assim como o Hiragana, um silabário fonético da língua japonesa. Ou seja, cada caractere representa uma sílaba (como カ = ka, リ = ri, タ = ta). Mas sua função gramatical e de uso é bem diferente do Hiragana.",
+                            "what":"O Katakana (カタカナ) é, assim como o Hiragana, um silabário fonético da língua japonesa. Ou seja, cada caractere representa uma sílaba (como カ = ka, リ = ri, タ = ta). Mas sua função gramatical e de uso é bem diferente do Hiragana.",
                             
                             "Explicacao":"O Katakana é usado para destaque, ênfase e, principalmente, para escrever palavras estrangeiras adaptadas ao japonês. Ele também é usado para onomatopeias, nomes científicos, e nomes estrangeiros.",
                             
