@@ -5,14 +5,47 @@ import os
 import hashlib
 
 CAMINHO_USUARIOS = "usuarios.json"
-CAMINHO_CONCEITOS = "conceitos.json"
+CAMINHO_CONTEUDO = "conteudo.json"
 CAMINHO_QUESTOES = "questoes.json"
-
+page : int = 0
 
 Aluno = None #recebe na função login, os dados do usuário
-
+SIZEWINDOW = "1000x800"
 def gerar_hash(senha: str) -> str:
     return hashlib.sha256(senha.encode("utf-8")).hexdigest()
+
+def carregar_conteudo():
+    if os.path.exists(CAMINHO_CONTEUDO):
+        with open(CAMINHO_CONTEUDO, "r", encoding="utf-8") as arquivo:
+            return json.load(arquivo)
+    else:
+        return {"Content": []}
+
+def salvar_content(data):
+    with open(CAMINHO_CONTEUDO, "w", encoding="utf-8") as arquivo:
+        json.dump(data, arquivo, indent=4, ensure_ascii=False)
+
+std_source = carregar_conteudo()
+List_cont_stg_hklv1 = std_source["Content"][0]["Stage 1"][0]["HKlv1"]
+
+#
+topic_value = 0
+topic = List_cont_stg_hklv1[topic_value] #assunto hira
+
+mainTc = topic["Assunto"]
+
+wht =  topic["what"] #oque é hira ou kata
+
+exp =  topic["Explicacao"] # explicação hira ou kata
+
+fnc =  topic["funcao"] # função hira ou kata
+
+expl_1 = topic["Exemplo1"] # explicação hira ou kata
+expl_2 = topic["Exemplo2"]
+expl_3 = topic["Exemplo3"]
+expl_4 = topic["Exemplo4"]
+
+
 
 # Carrega os usuários do arquivo JSON
 def carregar_usuarios():
@@ -30,21 +63,86 @@ def salvar_usuarios(data):
 # Dados carregados
 dados = carregar_usuarios()
 
+b1 = None
+b2 = None
+b3 = None
+
+def clear_elements(pai):
+        for widget in pai.winfo_children():
+            widget.destroy()
+
+def tab_learn():
+    global b1
+    global b2
+    global b3
+    global page
+    global topic_value
+    page = 1
+    TbLearn = tk.Toplevel(janela)
+    TbLearn.title("Houja - Aprender")
+    TbLearn.geometry(SIZEWINDOW)
+
+    b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
+    b1.pack(pady=29)
+    b2 = tk.Label(TbLearn, text= f"{wht}", font=22, wraplength=500, anchor="w", justify="left")
+    b2.pack(pady=5)
+    b3 = tk.Label(TbLearn, text= f"{exp}", font=22, wraplength=500, anchor="w", justify="left")
+    b3.pack(pady=5)
+    def next_pg():
+            global page
+            global topic_value
+            page += 1
+            if page == 1:
+                b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
+                b1.pack(pady=29)
+                b2 = tk.Label(TbLearn, text= f"{wht}", font=22, wraplength=500, anchor="w", justify="left")
+                b2.pack(pady=5)
+                b3 = tk.Label(TbLearn, text= f"{exp}", font=22, wraplength=500, anchor="w", justify="left")
+                b3.pack(pady=5)
+                Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
+                Bt_next.pack(pady = 5)
+
+            if page == 2:
+                salvar_usuarios(dados)
+                clear_elements(TbLearn)
+                b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
+                b1.pack(pady=29)
+                b2 = tk.Label(TbLearn, text= f"{fnc}", font=22, wraplength=500, anchor="w", justify="left")
+                b2.pack(pady = 5)
+                b3 = tk.Label(TbLearn, text= f"Exemplos:\n {expl_1}\n {expl_2}\n {expl_3}\n {expl_4}", font=22, wraplength=500, anchor="w", justify="left")
+                b3.pack(pady = 5)
+                Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
+                Bt_next.pack(pady = 5)
+            if page < 2:
+                pass
+                
+            elif page > 2:
+                page -2
+                Aluno["ListOfConceptsSaw"] += 1
+                topic_value = Aluno["ListOfConceptsSaw"]
+                return Aluno["ListOfConceptsSaw"]
+            
+
+
+    Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
+    Bt_next.pack(pady = 5)
+
+
 def Prime_screen(quem):
     Prime = tk.Toplevel(janela)
     Prime.title("Houja - Resumo do Aprendizado")
-    Prime.geometry("800x600")
-    h1 = tk.Label(Prime, text=f"Você fez até agora:", font=32)
+    Prime.geometry(SIZEWINDOW)
+    h1 = tk.Label(Prime, text=f"Seja bem vindo ao HouJa:", font=32)
     h1.pack()
-    h2 = tk.Label(Prime, text=f"{quem}")
-    h2.pack()
+   
+
     
-    
-    
-    hk_lv = tk.Label(Prime, text=f"")
+    Bt_learn_stg1 = tk.Button(Prime, text=f"Vamos começar a aprender Japonês", command=tab_learn)
+    Bt_learn_stg1.pack(pady=5)
 
 # Função de login
 def fazer_login():
+    global topic_value
     nome = entrada_usuario.get()
     senha = entrada_senha.get()
     senha_hash = gerar_hash(senha)#paramos aqui
@@ -55,7 +153,8 @@ def fazer_login():
             messagebox.showinfo("Login bem-sucedido", f"Bem-vindo(a), {nome}!")
             
             Aluno = usuario #assim que logar irá puxar todas ás variaveis desse usuario do Banco de Dados
-            Prime_screen(usuario["STAGE"])
+            topic_value = Aluno["ListOfConceptsSaw"]
+            Prime_screen(usuario)
             entrada_senha.destroy()
             entrada_usuario.destroy()
             
@@ -101,7 +200,7 @@ def abrir_cadastro():
 
         #Sempre que alterar ás váriveis do usuarios.json, lembre-se de add aqui também, se não buga
         nova_senha_hash = gerar_hash(nova_senha)
-        novo_registro = {"User": novo_usuario, "senha": nova_senha_hash, "HK_lv": 1, "Kj_level": 1, "ListOfLearned_HK": [], "ListOfLearned_Kj": [],"ListOfConceptsSaw": [],"ListOfQuestions_mistakes": [],"ListOfQuestions_correct": [],"STAGE": 1}
+        novo_registro = {"User": novo_usuario, "senha": nova_senha_hash, "HK_lv": 1, "Kj_level": 1, "ListOfLearned_HK": [], "ListOfLearned_Kj": [],"ListOfConceptsSaw": 0,"ListOfQuestions_mistakes": [],"ListOfQuestions_correct": [],"STAGE": 1}
 
         dados["usuarios"].append(novo_registro)
         salvar_usuarios(dados)
