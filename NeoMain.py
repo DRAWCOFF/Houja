@@ -6,6 +6,8 @@ import hashlib
 
 CAMINHO_USUARIOS = "usuarios.json"
 CAMINHO_CONCEITOS = "conceitos.json"
+CAMINHO_QUESTOES = "questoes.json"
+
 
 Aluno = None #recebe na função login, os dados do usuário
 
