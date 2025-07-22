@@ -15,7 +15,8 @@
                             "Exemplo1":"Partículas gramaticais: は、が、を、に、で\n",
                             "Exemplo2":"Terminações verbais: ～ます、～た、～ない\n",
                             "Exemplo3":"Palavras nativas simples: これ、それ、あ\nの、いぬ",
-                            "Exemplo4":"Complemento de kanji: 飲みます、知っている\n"
+                            "Exemplo4":"Complemento de kanji: 飲みます、知っている\n",
+                            "endereço": 1
                         },
                         {
                             "Assunto": "Katakana",
@@ -29,7 +30,8 @@
                             "Exemplo2":"Nomes estrangeiros: アンナ (Anna)",
                             "Exemplo3":"Onomatopeias: バタン (batan – batida)",
                             "Exemplo4":"Termos técnicos/científicos: ウイルス (vírus)",
-                            "Exemplo5": "Ênfase estilística: メチャクチャ (extremamente)"
+                            "Exemplo5": "Ênfase estilística: メチャクチャ (extremamente)",
+                            "endereço": 3
                         }
                     ]
                 }

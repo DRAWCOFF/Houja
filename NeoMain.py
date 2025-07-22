@@ -67,6 +67,8 @@ b1 = None
 b2 = None
 b3 = None
 
+mkpage = Aluno["markpage"]
+
 def clear_elements(pai):
         for widget in pai.winfo_children():
             widget.destroy()
@@ -82,49 +84,23 @@ def tab_learn():
     TbLearn.title("Houja - Aprender")
     TbLearn.geometry(SIZEWINDOW)
 
-    b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
-    b1.pack(pady=29)
-    b2 = tk.Label(TbLearn, text= f"{wht}", font=22, wraplength=500, anchor="w", justify="left")
-    b2.pack(pady=5)
-    b3 = tk.Label(TbLearn, text= f"{exp}", font=22, wraplength=500, anchor="w", justify="left")
-    b3.pack(pady=5)
-    def next_pg():
-            global page
-            global topic_value
-            page += 1
-            if page == 1:
-                b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
-                b1.pack(pady=29)
-                b2 = tk.Label(TbLearn, text= f"{wht}", font=22, wraplength=500, anchor="w", justify="left")
-                b2.pack(pady=5)
-                b3 = tk.Label(TbLearn, text= f"{exp}", font=22, wraplength=500, anchor="w", justify="left")
-                b3.pack(pady=5)
-                Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
-                Bt_next.pack(pady = 5)
-
-            if page == 2:
-                salvar_usuarios(dados)
-                clear_elements(TbLearn)
-                b1 = tk.Label(TbLearn, text=f"{mainTc}", font=32)
-                b1.pack(pady=29)
-                b2 = tk.Label(TbLearn, text= f"{fnc}", font=22, wraplength=500, anchor="w", justify="left")
-                b2.pack(pady = 5)
-                b3 = tk.Label(TbLearn, text= f"Exemplos:\n {expl_1}\n {expl_2}\n {expl_3}\n {expl_4}", font=22, wraplength=500, anchor="w", justify="left")
-                b3.pack(pady = 5)
-                Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
-                Bt_next.pack(pady = 5)
-            if page < 2:
-                pass
-                
-            elif page > 2:
-                page -2
-                Aluno["ListOfConceptsSaw"] += 1
-                topic_value = Aluno["ListOfConceptsSaw"]
-                return Aluno["ListOfConceptsSaw"]
+    """def verificar_markpage():
+        for pg in mkpage:
+            if pg == mkpage:
+                page = pg
+                return page
             
+    def pass_page():
+        page += 1
+        mkpage += 1
+        return page, mkpage
+
+    def update_page():
+        clear_elements(TbLearn)
+        b1 = mainTc"""
 
 
-    Bt_next = tk.Button(TbLearn, text="continuar", command=next_pg)
+    Bt_next = tk.Button(TbLearn, text="continuar")
     Bt_next.pack(pady = 5)
 
 
